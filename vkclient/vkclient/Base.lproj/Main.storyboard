@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginScreen" customModule="vkclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVr-Rc-aDC">
+                                <rect key="frame" x="161.5" y="320" width="91" height="19"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsg-va-iUG">
+                                <rect key="frame" x="181" y="209" width="52" height="19"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79T-xE-emX">
+                                <rect key="frame" x="162" y="443" width="90" height="44"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="46l-OT-Kbr"/>
+                                    <constraint firstAttribute="height" constant="44" id="dsH-5O-ieW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1RR-dh-g2y"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FVK-2B-iCU">
+                                <rect key="frame" x="124.5" y="364" width="165" height="35"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="S0a-AY-50Z"/>
+                                    <constraint firstAttribute="height" constant="35" id="UA3-Lc-GGq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="21W-wQ-6OT">
+                                <rect key="frame" x="124.5" y="253" width="165" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="AQ2-YG-Kam"/>
+                                    <constraint firstAttribute="width" constant="165" id="za2-RP-8We"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VK Client" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f89-XB-SdB">
+                                <rect key="frame" x="149.5" y="94" width="115" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1608679593" green="0.160575211" blue="0.17647454139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FVK-2B-iCU" firstAttribute="centerX" secondItem="wVr-Rc-aDC" secondAttribute="centerX" id="0Pd-IK-Mcs"/>
+                            <constraint firstItem="21W-wQ-6OT" firstAttribute="centerX" secondItem="Wsg-va-iUG" secondAttribute="centerX" id="2Yd-5O-zLB"/>
+                            <constraint firstItem="f89-XB-SdB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="31C-Fg-Ygq"/>
+                            <constraint firstItem="21W-wQ-6OT" firstAttribute="top" secondItem="Wsg-va-iUG" secondAttribute="bottom" constant="25" id="8zo-hw-L7V"/>
+                            <constraint firstItem="79T-xE-emX" firstAttribute="centerX" secondItem="FVK-2B-iCU" secondAttribute="centerX" id="GLI-NF-e3h"/>
+                            <constraint firstItem="79T-xE-emX" firstAttribute="top" secondItem="FVK-2B-iCU" secondAttribute="bottom" constant="44" id="OOk-q8-pPL"/>
+                            <constraint firstItem="wVr-Rc-aDC" firstAttribute="centerX" secondItem="21W-wQ-6OT" secondAttribute="centerX" id="S5C-OE-wsx"/>
+                            <constraint firstItem="wVr-Rc-aDC" firstAttribute="top" secondItem="21W-wQ-6OT" secondAttribute="bottom" constant="32" id="WnW-MQ-Ysb"/>
+                            <constraint firstItem="f89-XB-SdB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="WvP-tC-sUF"/>
+                            <constraint firstItem="FVK-2B-iCU" firstAttribute="top" secondItem="wVr-Rc-aDC" secondAttribute="bottom" constant="25" id="YGG-LC-RFk"/>
+                            <constraint firstItem="Wsg-va-iUG" firstAttribute="centerX" secondItem="f89-XB-SdB" secondAttribute="centerX" id="kM3-rn-H9X"/>
+                            <constraint firstItem="Wsg-va-iUG" firstAttribute="top" secondItem="f89-XB-SdB" secondAttribute="bottom" constant="90" id="lk8-LL-EAZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="21W-wQ-6OT" id="pYF-y8-8Yo"/>
+                        <outlet property="passwordTextField" destination="FVK-2B-iCU" id="QAm-IB-GtH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+</document>
